@@ -1,0 +1,44 @@
+<!--INVERTER CORES-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+
+    <style>
+        body {
+            background-color: white;
+            color:black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Inverter cores</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate harum nisi eveniet magnam alias, cum obcaecati officia vel tempore ut maiores nihil esse nostrum dolore culpa, suscipit deserunt unde! Itaque!</p>
+
+    <script>
+        inverter = 1
+
+        // Se inverter, então inverte as cores do site
+        if (inverter) {
+            
+            // Corpo do site, h1[0] e parágrafo[0]
+            corpo =  window.document.body
+            h1 = corpo.getElementsByTagName('h1')[0]
+            parag = corpo.getElementsByTagName('p')[0]
+            
+            // Muda a cor de fundo do site para preto
+            corpo.style.backgroundColor = "black"
+            // Muda a cor de h1 e do parágrafo para branco
+            h1.style.color = 'white'
+            parag.style.color = 'white'   
+        }
+    </script>
+</body>
+</html>

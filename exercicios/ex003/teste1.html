@@ -1,0 +1,37 @@
+<!--ESCREVENDO O DOBRO DE UM NÚMERO QUE ESTÁ NO PARÁGRAFO-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+
+    <style>
+        body {
+            background-color: rgb(60, 61, 119);
+            color:aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Multiplicar número no parágrafo</h1>
+    <p>60</p>
+
+    <script>
+        // Parágrafo
+        p1 = window.document.body.getElementsByTagName('p')[0]
+        // Extrai o número contido no parágrafo
+        numero = Number(p1.innerText)
+        // Dobre o número
+        dobro = numero * 2
+        // Esfcreve do documento o número e o seu dobro
+        window.document.writeln(`O dobro de ${numero} é: ${dobro}`)
+
+    </script>
+</body>
+</html>

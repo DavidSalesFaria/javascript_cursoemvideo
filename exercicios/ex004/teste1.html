@@ -1,0 +1,71 @@
+<!--EVENTO PARA INVERTER CORES-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+
+    <style>
+        body {
+            background-color: white;
+            color:black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Inverter cores</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate harum nisi eveniet magnam alias, cum obcaecati officia vel tempore ut maiores nihil esse nostrum dolore culpa, suscipit deserunt unde! Itaque!</p>
+
+    <button id="bot">
+        Inverter
+    </button>
+
+    <script>
+        // botão
+        var bt = window.document.querySelector("button#bot")
+        // Corpo (body)
+        var corpo = window.document.body
+        // 1º h1
+        var h1 = corpo.getElementsByTagName("h1")[0]
+        // 1º Parágrafo
+        var p = corpo.getElementsByTagName("p")[0]
+        
+        // Adiciona o evendo clicar1 no botão
+        bt.addEventListener("click", clicar1)
+        
+        // Inverte a cor do site ao clicar no botão
+        function clicar1(){
+            // Muda o fundo para preto e as letras para braco
+            corpo.style.backgroundColor = "black"
+            h1.style.color = "white"
+            p.style.color = "white"
+
+            // Remove e adiciona, respectivamente
+            // os eventos clicar1 e clicar2 no botão
+            bt.removeEventListener("click", clicar1)
+            bt.addEventListener("click", clicar2)
+        }
+
+        // Reverte a cor do site ao clicar no botão
+        function clicar2(){
+            // Muda o fundo para branco e as letras para preto
+            corpo.style.backgroundColor = "white"
+            h1.style.color = "black"
+            p.style.color = "black"
+            
+            // Remove e adiciona, respectivamente
+            // os eventos clicar2 e clicar1 no botão
+            bt.removeEventListener("click", clicar2)
+            bt.addEventListener("click", clicar1)
+        }
+
+
+    </script>
+</body>
+</html>
