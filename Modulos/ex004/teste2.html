@@ -1,5 +1,5 @@
 <!--
-    EVENTO CLICAR & KEYDOWN SITE DE DOMA
+    EVENTOS DOM CLICAR & KEYDOWN
     Também realiza a soma quando pressiona ENTER
 -->
 <!DOCTYPE html>
@@ -30,13 +30,18 @@
     
     <!--Inputs numéricos-->
     <input type="number" name="txtn1" id="txtn1">
+    +
     <input type="number" name="txtn2" id="txtn2">
+    =
+    <input type="text" name="txtresult" id="txtresult">
+    <br><br>
     <!--Input botão-->
     <input type="button" id= "bot" value="Somar" onclick="somar()" aria-pressed="somar()">
-    <div id="res">Resultado</div>
 
+    
 
     <script>
+    
             // Chama somar() quando pressiona a tecla enter
             window.document.addEventListener("keydown", function(event){
                 // Se o código da tecla for 13
@@ -47,14 +52,14 @@
 
             // Realiza a soma
             function somar(){
-                var tn1 = window.document.getElementById('txtn1')
+                var tn1 = window.document.querySelector('input#txtn1')
                 var tn2 = window.document.querySelector('input#txtn2')
-                var res = window.document.getElementById("res")
+                var inputResp = window.document.querySelector("input#txtresult")
 
                 var n1 = Number(tn1.value)
                 var n2 = Number(tn2.value)
                 var s = n1 + n2
-                res.innerHTML = `A soma de ${n1} e ${n2} é igual a <strong>${s},</strong>`
+                inputResp.value = s
             }
             
             

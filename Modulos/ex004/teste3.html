@@ -1,0 +1,65 @@
+<!--
+    EVENTOS DOM CLICAR & KEYDOWN
+    Também realiza a soma quando pressiona ENTER
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Somando Valores</h1>
+    
+    <!--Inputs numéricos-->
+    <p id="cont">0</p>
+    <input type="number" name="inputSeg" id="inputSeg">
+    <br><br>
+    <!--Input botão-->
+    <input type="button" id= "bot" value="START" onclick="temporizar()" aria-pressed="somar()">
+
+
+    <script>
+    
+            // Chama somar() quando pressiona a tecla enter
+            window.document.addEventListener("keydown", function(event){
+                // Se o código da tecla for 13
+                if (event.keyCode == 13){
+                    temporizar()
+                }
+            })
+
+            // Realiza a soma
+            function temporizar(){
+                var inputSeg = window.document.querySelector('input#inputSeg')
+                var cont = window.document.querySelector('p#cont')
+ 
+                for (let index = 0; index < inputSeg.value; index++) {
+                    setTimeout(function() {
+                        cont.innerText = index
+                    }, 1000)               
+                }
+            }
+            
+            
+    </script>
+
+</body>
+</html>
