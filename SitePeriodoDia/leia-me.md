@@ -8,12 +8,12 @@ O site muda a sua aparência de acordo com os períodos do dia.
 
 **Noite:** Períodos entre 18:00 e 23:29
 
+<br>
 
-Fontes de Imagem:
+**Atribuições de Imagem:**
 
+- [Foto de Matthias Groeneveld no Pexels](https://www.pexels.com/pt-br/foto/espaco-do-texto-campo-area-panorama-5933631/)
 
-(Foto de Matthias Groeneveld no Pexels)[https://www.pexels.com/pt-br/foto/espaco-do-texto-campo-area-panorama-5933631/]
+- [Foto de yoland rafougilet](https://www.pexels.com/pt-br/foto/barcos-botes-alvorecer-amanhecer-11091800/)
 
-(Foto de yoland rafougilet)[https://www.pexels.com/pt-br/foto/barcos-botes-alvorecer-amanhecer-11091800/]
-
-(Foto de Reynaldo #brigworkz Brigantty)[https://www.pexels.com/pt-br/foto/fotografia-de-lampadas-de-rua-ligadas-ao-lado-da-baia-durante-a-noite-771883/]
+- [Foto de Reynaldo #brigworkz Brigantty](https://www.pexels.com/pt-br/foto/fotografia-de-lampadas-de-rua-ligadas-ao-lado-da-baia-durante-a-noite-771883/)
