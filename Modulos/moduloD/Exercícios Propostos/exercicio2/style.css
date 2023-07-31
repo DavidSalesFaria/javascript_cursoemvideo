@@ -23,15 +23,8 @@ footer{
     font-size: 7pt;
 }
 
-img#imagem{
-    width: 150px;
+
+img{
+    border-radius: 50%;
 }
 
-div {
-    text-align: center;
-    padding: 8px;
-}
-
-div#msg {
-    font-size: 10pt;
-}
