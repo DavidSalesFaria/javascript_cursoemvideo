@@ -28,3 +28,13 @@ img{
     border-radius: 50%;
 }
 
+.scroll-box{
+    width: 150px; /* Set the width of the box */
+    height: 200px; /* Set the height of the box */
+    border: 1px solid #ccc; /* Add a border for visualization */
+    overflow: auto; /* Display scroll bars when content overflows */
+}
+
+.linha_tabu{
+    margin: auto;
+}
