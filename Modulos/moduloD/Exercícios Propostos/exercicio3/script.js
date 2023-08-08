@@ -32,7 +32,7 @@ function contar(){
             for (i=Number(val_ini); i <= Number(val_fim); i += Number(val_pas)){
 
                 if (i + Number(val_pas) <= Number(val_fim))
-                    resp.innerHTML += `${i} 👉 `
+                    resp.innerHTML += `${i} \u{1F449} `
                 else
                     resp.innerHTML += `${i} 🏁`
             }
@@ -42,7 +42,7 @@ function contar(){
             for (i=Number(val_ini); i >= Number(val_fim); i += Number(val_pas)){
 
                 if (i + Number(val_pas) >= Number(val_fim))
-                    resp.innerHTML += `${i} 👉 `
+                    resp.innerHTML += `${i} \u{1F449} `
                 else
                     resp.innerHTML += `${i} 🏁`
             }
