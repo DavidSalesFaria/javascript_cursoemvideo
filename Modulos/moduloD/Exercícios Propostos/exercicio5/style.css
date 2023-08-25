@@ -29,3 +29,7 @@ img{
 #selnum { 
     width:150px;
 }
+
+input.erro {
+  border: 2px solid rgb(235, 4, 4);
+}
